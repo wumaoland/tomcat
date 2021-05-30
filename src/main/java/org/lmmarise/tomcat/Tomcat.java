@@ -46,6 +46,7 @@ public class Tomcat {
         for (ServletMapping servlet : servletMaps) {
             // 将解析注解获取到的URL与Servlet配置到Tomcat
             servletConfig.addServlet(servlet.getUrl(), servlet.getClazz());
+            log.info("http://127.0.0.1:{}{}", port, servlet.getUrl());
         }
     }
 
