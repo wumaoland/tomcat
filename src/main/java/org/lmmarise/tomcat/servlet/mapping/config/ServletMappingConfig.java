@@ -1,0 +1,20 @@
+package org.lmmarise.tomcat.servlet.mapping.config;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 整个Tomcat的URL与Servlet的一个映射关系配置
+ */
+public class ServletMappingConfig {
+    private final Map<String, String> servletMaps = new HashMap<>();
+
+    public void addServlet(String servletUrl, String servletClass){
+        servletMaps.put(servletUrl, servletClass);
+    }
+
+    public String getServlet(String servletUrl) {
+        return servletMaps.get(servletUrl);
+    }
+
+}
