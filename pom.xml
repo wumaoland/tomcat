@@ -6,7 +6,8 @@
 
     <groupId>org.lmmarise.tomcat</groupId>
     <artifactId>lmmarise-tomcat</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+    <description>实现了一个最基础的Web</description>
 
     <dependencies>
         <dependency>

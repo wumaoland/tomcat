@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 整个Tomcat的URL与Servlet的一个映射关系配置
+ * 一个Web App中的URL与Servlet的一个映射关系配置
  */
 public class ServletMappingConfig {
     private final Map<String, String> servletMaps = new HashMap<>();
