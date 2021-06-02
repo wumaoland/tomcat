@@ -13,6 +13,8 @@
         <module>src-tomcat</module>
         <module>my-tomcat</module>
         <module>embedded-tomcat</module>
+        <module>nio</module>
+        <module>embedded-jetty-jsp</module>
     </modules>
 
     <dependencyManagement>
