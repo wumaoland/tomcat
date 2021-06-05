@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lmmarise-tomcat</artifactId>
+        <artifactId>test-tomcat</artifactId>
         <groupId>org.lmmarise.tomcat</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <description>测试Tomcat中用到的技术</description>
-    <packaging>pom</packaging>
-    <artifactId>test-tomcat</artifactId>
 
-    <modules>
-        <module>nio</module>
-        <module>spi</module>
-        <module>nio2</module>
-    </modules>
+    <artifactId>nio2</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
