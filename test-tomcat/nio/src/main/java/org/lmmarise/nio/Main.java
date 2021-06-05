@@ -14,7 +14,7 @@ import java.util.Iterator;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public final synchronized strictfp static void main(String[] args) throws IOException {
         // 服务端channel
         ServerSocketChannel server = ServerSocketChannel.open();
         server.bind(new InetSocketAddress(8088));
