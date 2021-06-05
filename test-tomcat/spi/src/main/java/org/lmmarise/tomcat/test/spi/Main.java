@@ -29,7 +29,7 @@ public class Main {
     public static void serviceSPI() {
         // Java核心API--ServiceLoader(rt.jar里面提供)用来扫描服务实现类，服务实现者提供的jar
         // ServiceLoader通过ContextClassLoader破坏Java类加载委托机制，加载classpath下Service的实现类
-        // setCurrentThreadClassLoaderAsExtClassLoader();  // 将加载器换为ExtClassLoader将加载不到classpath下的Service实现类
+        // setCurrentThreadClassLoaderAsExtClassLoader();  // 通过改变ThreadLocal中的类加载器，以改变接下来的ServiceLoader使用的类加载器
         ServiceLoader<Service> services = ServiceLoader.load(Service.class);    // 不仅加载类，还调用类的无参构造创建示例
         for (Service service : services) {
             service.doSomething();
