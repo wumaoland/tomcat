@@ -8,8 +8,14 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <description>测试Tomcat中用到的技术</description>
+    <packaging>pom</packaging>
+    <artifactId>test-tomcat</artifactId>
 
-    <artifactId>nio</artifactId>
+    <modules>
+        <module>nio</module>
+        <module>spi</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
