@@ -33,7 +33,7 @@ public class Main {
         // 如果放开下行代码，ServiceLoader使用的类加载器将从AppClassLoader切换到ExtClassLoader，从从classpath目录加载变成从加载ext目录加载
         // setCurrentThreadClassLoaderAsExtClassLoader();  // 通过改变ThreadLocal中的类加载器，以改变接下来的ServiceLoader使用的类加载器
 
-        ServiceLoader<Service> services = ServiceLoader.load(Service.class);    // 不仅加载类，还调用类的无参构造创建示例
+        ServiceLoader<Service> services = ServiceLoader.load(Service.class);    // 不仅加载类，还调用类的无参构造创建实例
         for (Service service : services) {
             service.doSomething();
         }
