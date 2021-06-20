@@ -1,7 +1,7 @@
 package org.lmmarise.tomcat.test.spi;
 
 import org.lmmarise.tomcat.test.spi.provider.Service;
-import sun.misc.Launcher;
+//import sun.misc.Launcher;
 
 import java.util.ServiceLoader;
 
