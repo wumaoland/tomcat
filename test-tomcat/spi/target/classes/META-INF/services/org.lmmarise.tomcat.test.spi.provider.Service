@@ -1,0 +1,4 @@
+# 多各类以换行分割
+# java.util.ServiceLoader按照实现类全限类名的定义顺序进行加载
+org.lmmarise.tomcat.test.spi.impl.ServiceB
+org.lmmarise.tomcat.test.spi.impl.ServiceA
