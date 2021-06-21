@@ -13,6 +13,7 @@
         <module>jdk-proxy</module>
         <module>cglib-proxy</module>
         <module>circular-dependency</module>
+        <module>run</module>
     </modules>
     <artifactId>test-spring</artifactId>
     <packaging>pom</packaging>
