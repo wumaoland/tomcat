@@ -49,11 +49,6 @@ class AbstractClassLoader extends ClassLoader {
         return data;
     }
 
-    @Override
-    public String toString() {
-        return "AbstractClassLoader{}";
-    }
-
 }
 
 /**
@@ -76,11 +71,6 @@ class MyClassLoader_1 extends AbstractClassLoader {
         return clazz;
     }
 
-    @Override
-    public String toString() {
-        return "MyClassLoader_1{}";
-    }
-
 }
 
 /**
@@ -100,11 +90,6 @@ class MyClassLoader_2 extends AbstractClassLoader {
         byte[] classBytes = loadClassData(path, name);
         Class<?> clazz = defineClass(name, classBytes, 0, classBytes.length);
         return clazz;
-    }
-
-    @Override
-    public String toString() {
-        return "MyClassLoader_2{}";
     }
 
 }
