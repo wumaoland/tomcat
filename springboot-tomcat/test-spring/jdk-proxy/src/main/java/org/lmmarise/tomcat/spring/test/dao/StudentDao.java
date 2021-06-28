@@ -9,4 +9,9 @@ public class StudentDao implements IStudentDao {
     public void save() {
         System.out.println("StudentDao--save");
     }
+
+    @Override
+    public void save1() {
+        System.out.println("StudentDao--save1");
+    }
 }

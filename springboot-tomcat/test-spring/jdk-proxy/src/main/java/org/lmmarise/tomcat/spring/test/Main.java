@@ -1,6 +1,7 @@
 package org.lmmarise.tomcat.spring.test;
 
 import org.lmmarise.tomcat.spring.test.dao.IStudentDao;
+import org.lmmarise.tomcat.spring.test.dao.IStudentDao1;
 import org.lmmarise.tomcat.spring.test.dao.StudentDao;
 import org.lmmarise.tomcat.spring.test.handler.MyInvocationHandler;
 
@@ -17,9 +18,10 @@ public class Main {
         IStudentDao stuDAO = new StudentDao();
         MyInvocationHandler handler = new MyInvocationHandler(stuDAO);
         // 使用 Proxy.newProxyInstance 动态的创建代理对象 stuProxy
-        IStudentDao studentProxy = (IStudentDao)
+        IStudentDao1 studentProxy = (IStudentDao1)
                 Proxy.newProxyInstance(Main.class.getClassLoader(), stuDAO.getClass().getInterfaces(), handler);
-        studentProxy.save();
+        ((IStudentDao) studentProxy).save();    // stuDAO.getClass().getInterfaces() 找到了所有的接口，并为其生成了代理实现
+        studentProxy.save1();
     }
 
 }

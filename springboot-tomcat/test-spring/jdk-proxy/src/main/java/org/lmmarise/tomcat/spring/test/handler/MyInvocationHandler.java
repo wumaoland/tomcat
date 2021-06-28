@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
  */
 public class MyInvocationHandler implements InvocationHandler {
 
+    private int count = 0;
     private final Object obj;
 
     public MyInvocationHandler(Object obj) {
@@ -18,11 +19,18 @@ public class MyInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("开始事物");
+        System.out.println("开始事物" + ++count);
         Object result = method.invoke(obj, args);
-        System.out.println("结束事物");
+        System.out.println("结束事物" + ++count);
 
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "MyInvocationHandler{" +
+                "count=" + count +
+                ", obj=" + obj +
+                '}';
+    }
 }
