@@ -3,8 +3,8 @@ package org.lmmarise.tomcat;
 import org.lmmarise.tomcat.request.Request;
 import org.lmmarise.tomcat.response.Response;
 import org.lmmarise.tomcat.servlet.Servlet;
-import org.lmmarise.tomcat.servlet.mapping.ServletMapping;
-import org.lmmarise.tomcat.servlet.mapping.config.ServletMappingConfig;
+import org.lmmarise.tomcat.mapping.ServletMapping;
+import org.lmmarise.tomcat.mapping.ServletMappingConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

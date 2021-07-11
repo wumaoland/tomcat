@@ -1,4 +1,4 @@
-package org.lmmarise.tomcat.servlet.mapping;
+package org.lmmarise.tomcat.mapping;
 
 /**
  * 封装一个Servlet的基本信息

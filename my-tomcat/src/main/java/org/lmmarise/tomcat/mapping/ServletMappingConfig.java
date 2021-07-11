@@ -1,4 +1,4 @@
-package org.lmmarise.tomcat.servlet.mapping.config;
+package org.lmmarise.tomcat.mapping;
 
 import java.util.HashMap;
 import java.util.Map;
