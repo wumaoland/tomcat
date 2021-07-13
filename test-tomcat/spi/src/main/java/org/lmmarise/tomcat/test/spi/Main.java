@@ -34,6 +34,7 @@ public class Main {
         // setCurrentThreadClassLoaderAsExtClassLoader();  // 通过改变ThreadLocal中的类加载器，以改变接下来的ServiceLoader使用的类加载器
 
         ServiceLoader<Service> services = ServiceLoader.load(Service.class);    // 不仅加载类，还调用类的无参构造创建示例
+//        Class.forName()   使用调用者的类加载器，来加载指定类。--JVM的类加载传导规则
         for (Service service : services) {
             service.doSomething();
         }

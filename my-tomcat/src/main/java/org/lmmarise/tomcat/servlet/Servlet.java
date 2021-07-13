@@ -27,6 +27,9 @@ public abstract class Servlet {
                 doPost(request, response);
                 break;
             }
+            default:
+                doGet(request, response);
+                break;
         }
     }
 
