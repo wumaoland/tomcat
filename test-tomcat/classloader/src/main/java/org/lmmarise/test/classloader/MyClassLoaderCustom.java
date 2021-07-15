@@ -3,6 +3,7 @@ package org.lmmarise.test.classloader;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 /**
  * @author lmmarise.j@gmail.com
@@ -48,7 +49,7 @@ public class MyClassLoaderCustom extends ClassLoader {
         if (classBytes.length == 0) {
             throw new ClassNotFoundException();
         }
-        return defineClass(classBytes, 0, classBytes.length);
+        return defineClass(name, classBytes, 0, classBytes.length);
     }
 
     private byte[] getClassData(File file) {
