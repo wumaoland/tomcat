@@ -3,7 +3,6 @@ package org.lmmarise.test.classloader;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.StringTokenizer;
 
 /**
  * @author lmmarise.j@gmail.com

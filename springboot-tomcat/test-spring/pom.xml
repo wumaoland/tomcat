@@ -14,6 +14,8 @@
         <module>cglib-proxy</module>
         <module>circular-dependency</module>
         <module>gc</module>
+        <module>beans</module>
+        <module>ioc-lookup</module>
     </modules>
     <artifactId>test-spring</artifactId>
     <packaging>pom</packaging>
