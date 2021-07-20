@@ -17,6 +17,7 @@
         <module>beans</module>
         <module>ioc-lookup</module>
         <module>ioc-injection</module>
+        <module>ioc-container</module>
     </modules>
     <artifactId>test-spring</artifactId>
     <packaging>pom</packaging>
