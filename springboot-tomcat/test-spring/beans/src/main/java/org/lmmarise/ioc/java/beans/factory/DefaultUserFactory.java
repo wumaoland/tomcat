@@ -1,7 +1,5 @@
 package org.lmmarise.ioc.java.beans.factory;
 
-import org.springframework.beans.factory.InitializingBean;
-
 import javax.annotation.PostConstruct;
 
 /**
@@ -10,7 +8,7 @@ import javax.annotation.PostConstruct;
  * @author lmmarise.j@gmail.com
  * @date 2021/7/21 1:53 下午
  */
-public class DefaultUserFactory implements UserFactory, InitializingBean {
+public class DefaultUserFactory implements UserFactory {
 
     // 1.基于注解的Bean初始化
     @PostConstruct
@@ -28,4 +26,17 @@ public class DefaultUserFactory implements UserFactory, InitializingBean {
         System.out.println("initMethod");
     }
 
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("DisposableBean destroy");
+    }
+
+    public void doDestroy() {
+        System.out.println("自定义销毁doDestroy");
+    }
+
+    @Override
+    public void finalize() throws Throwable {
+        System.out.println(DefaultUserFactory.class.getName() + "当前对象正在被回收。。");
+    }
 }
