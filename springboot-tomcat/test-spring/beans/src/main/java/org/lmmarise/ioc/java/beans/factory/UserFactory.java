@@ -12,4 +12,6 @@ public interface UserFactory {
         return User.createUser();
     }
 
+    void init1();
+
 }
