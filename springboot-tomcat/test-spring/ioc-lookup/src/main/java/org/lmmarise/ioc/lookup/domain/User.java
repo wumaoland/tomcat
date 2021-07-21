@@ -24,6 +24,13 @@ public class User {
         this.name = name;
     }
 
+    public static User createUser() {
+        User user = new User();
+        user.setId(12L);
+        user.setName("给给");
+        return user;
+    }
+
     @Override
     public String toString() {
         return "User{" +
